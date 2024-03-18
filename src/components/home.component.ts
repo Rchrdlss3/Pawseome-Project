@@ -14,6 +14,7 @@ import { RouterModule } from "@angular/router";
     template: 
     `
     <div className = "dog-app-wrapper">
+    <h3 style = "color: #533e0d">Different Breeds</h3>
     <div class = "dog-card-wrapper">
     <mat-card class = "dog-card" *ngFor ="let breed of allBreeds.message">
       <mat-card-header>
@@ -33,8 +34,6 @@ export class HomeComponent implements OnInit {
     allBreeds: AllBreedsModel = new AllBreedsModel();
     dogPawImage: string = DogPawImageURL;
     dialogImage: string = ''
-
-  
     constructor(private dogServices: DogServices, private dialog: MatDialog) {
   
     }

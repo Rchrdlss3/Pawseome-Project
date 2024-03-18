@@ -8,6 +8,9 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif; 
     padding: 5px;
 }
+/*Dog Card Section*/
+
+/*Data received from server side is lowercased, so we capitalize it*/
 .dog-card-title {
     text-transform: capitalize;
 }
@@ -22,11 +25,15 @@ body {
 .dog-card-wrapper img {
     width: 25px;
     margin: auto;
+    filter: invert(10%) sepia(98%) saturate(5273%) hue-rotate(59deg) brightness(86%) contrast(90%);
 }
 .dog-card {
     width: 200px;
     margin: 5px;
+    color: #ae8507;
+    background-color: #ffc300 !important;
 }
+/*Navigation styling*/
 .navigation-wrapper {
     width: 100%;
     height: 50px;
@@ -35,11 +42,10 @@ body {
     text-align: center;
 }
 .naivgation-wrapper a {
-    text-decoration: dashed;
     text-decoration: none !important;
-    color: black !important;
     margin: 5px;
 }
+/*Styling for random dog page*/
 .random-dog-wrapper {
     width: 100%;
     height: 500px;
@@ -53,7 +59,9 @@ body {
     object-fit:cover;
     border-radius: 10px;
 }
-
+/*Styling for header */
 .title-header {
     text-align: center;
+    color: #ffc300;
+    font-weight: 800;
 }

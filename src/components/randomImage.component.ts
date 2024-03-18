@@ -38,7 +38,6 @@ export class RandomImageComponent implements OnInit {
     }
 
     getRandomDogImage(valEntered:any){
-        console.log(valEntered.target.value)
         let returnedString: any;
         const targetValue = valEntered.target.value.toLowerCase()
         this.dogServices.getDogImages(targetValue).subscribe((res=> {
@@ -56,7 +55,6 @@ export class RandomImageComponent implements OnInit {
     setImageAndStatus(srcProvided: string,status:string){
         this.givenImage = srcProvided
         this.status = status
-        console.log(this.givenImage)
     }
     ngOnInit () {
         if (this.searchedDog == '') {

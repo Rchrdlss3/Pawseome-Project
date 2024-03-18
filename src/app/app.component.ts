@@ -21,7 +21,7 @@ import {FormsModule} from '@angular/forms';
   <div class = "navigation-wrapper">
   <router-outlet>
   <a *ngFor = "let route of routingArray" routerLink = {{route.route}} style = "
-  margin:5px; color: inherit; text-decoration: none; font-weight: 700;
+  margin:5px; color: #a0bded; text-decoration: none; font-weight: 700;
   "
   class = "router-link"
   >{{route.name}}</a>
